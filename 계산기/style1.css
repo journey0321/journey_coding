@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: "Noto sans", cursive;
+    color: #000;
+  }
+
+  body {
+    background-color: #A9D279;
+  }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calculator {
+    background-color: #eee;
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+    padding: 15px 20px 20px;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.296);
+    border: 1px solid #fff;
+  }
+
+  .apple_button {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .apple_button > button {
+    margin-right: 5px;
+  }
+
+  .apple_button img {
+    width: 20px;
+    position: absolute;
+    left: 220px;
+    top: -2px;
+  }
+
+  .apple_button button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px #000 inset;
+    border: 1px solid rgb(141, 141, 141);
+  }
+
+  .apple_button .close {
+    background: linear-gradient(to top, #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+  }
+
+  .apple_button .close:active {
+    background: linear-gradient(to bottom, #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+  }
+
+  .apple_button .minimization {
+    background: linear-gradient(to top, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+  }
+
+  .apple_button .minimization:active {
+    background: linear-gradient(to bottom, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+  }
+
+  .apple_button .enlargement {
+    background: linear-gradient(to top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+  }
+
+  .apple_button .enlargement:active {
+    background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+  }
+
+  .calculator_value {
+    background-color: #333;
+    height: 80px;
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .calculator_value span {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .calculator_button {
+    height: 330px;
+    margin-top: 23px;
+  }
+
+  .button__row {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button__row > button {
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(to top, #ffffff 0%,#ECECEC 50%,#E1E1E2 100%);
+    border: 1px solid #DCDCDC;
+    border-radius: 15px;
+    box-shadow: 1px 1px #fff;
+    font-size: 18px;
+  }
+
+  .button__row > button:active {
+    background: linear-gradient(to bottom, #ffffff 0%,#ECECEC 50%,#E1E1E2 100%);
+    border:1px solid #E5E5E5;
+    color: #333;
+  }
+
+  .button__row .number {
+    width: 220px;
+  }
